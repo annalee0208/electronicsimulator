@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teachable Machine with Webcam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="left-panel" class="panel">
+            <img src="third/third-quiz.jpg" alt="First Image" id="first-image">
+        </div>
+        <div id="right-panel" class="panel">
+            <div id="webcam-container"></div>
+        </div>
+        <div id="bottom-panel" class="panel">
+            <div id="indicator-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div id="label-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script-3.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

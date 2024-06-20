@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI 기반 전자기능사 브라우저 활동</title>
+    <link rel="stylesheet" href="stylesmain.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@latest"></script>
+</head>
+<body>
+    <div id="logo">
+        <img src="main/logo.png" alt="Logo">
+    </div>
+
+    <div id="imageContainer">
+        <img id="startImage" src="main/main.gif" alt="Start Recording" style="cursor: pointer; width: 100%; max-width: 1000px; height: auto;">
+        <img id="set1" src="main/set1.png" alt="Set 1" style="cursor: pointer; width: 100%; max-width: 500px; height: auto; display: none;">
+        <img id="set2" src="main/set2.png" alt="Set 2" style="cursor: pointer; width: 100%; max-width: 500px; height: auto; display: none;">
+        <img id="img1" src="main/img1.png" alt="Image 1" style="display: none;">
+        <img id="img2" src="main/img2.png" alt="Image 2" style="display: none;">
+        <img id="img3" src="main/img3.png" alt="Image 3" style="display: none;"> 
+        <img id="img4" src="main/img4.png" alt="Image 4" style="display: none;">
+        <img id="img5" src="main/img5.png" alt="Image 5" style="display: none;">
+        <img id="img0" src="main/img0.gif" alt="Image 0" style="cursor: pointer; width: 100%; max-width: 500px; height: auto; display: none;">
+    </div>
+
+    <div id="startPrompt" style="text-align: center; display: none;">음성인식 시작</div>
+    <div id="label-container"></div>
+    <div id="result" style="display: none;"></div>
+    <div id="status" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
